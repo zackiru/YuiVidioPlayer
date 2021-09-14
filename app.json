@@ -1,0 +1,71 @@
+{
+    "name": "Yui Vidio Player",
+    "description": "A advanced Anime Theme VC Video Player created for playing vidio in the voice chats of Telegram Groups",
+    "logo": "https://telegra.ph/file/f7fd45bd57dbe5a14e0f3.jpg",
+    "keywords": [
+        "Py_TgCalls",
+        "Telegram Bot",
+        "Vidio Vc Steramer"
+    ],
+    "website": "https://t.me/AsmSafone",
+    "repository": "https://github.com/Achu2234/YuiVidioPlayer",
+    "success_url": "https://t.me/AsmSafone",
+    "env": {
+        "API_ID": {
+            "description": "Your APP_ID from my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Your API_HASH from my.telegram.org",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Your bot token from @botfather",
+            "required": true
+        },
+        "SESSION_NAME": {
+            "description": "Pyrogram String Session",
+            "required": true
+        },
+        "ADMIN": {
+            "description":"Add Your User ID"
+        },
+        "DB_URL": {
+            "description": "Your Mongo DB URL Obtained From mongodb.com Watch This Video https://youtu.be/HhHzCfrqsoE",
+            "value": ""
+        },
+        "DB_NAME":{ 
+               "description":"Your Mongo DB Database Name ",
+                "value": "my",
+                "required": false
+          },
+        "BOT_USERNAME": {
+            "description": "your bot username from @botfather",
+            "required": true
+         },
+        "SUDO_USERS": {
+            "description": "list of user ids to be added to sudo member list",
+            "required": true
+        },
+        "COMMAND_PREFIXES": {
+            "description": "/",
+            "required": true
+           }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}

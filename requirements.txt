@@ -1,0 +1,27 @@
+TgCrypto ==1.2.2
+ffmpeg-python
+python-dotenv
+httpx==0.13.3
+git+https://github.com/pyrogram/pyrogram@master
+py-tgcalls==0.8.0
+tswift
+youtube_search_python
+youtube_search
+requests
+asyncio
+python-rapidjson>=0.9.3
+Pillow>=4.2.0
+aiohttp
+psutil
+pymongo
+dnspython
+googletrans==4.0.0rc1
+gTTS
+youtube-dl
+future
+aiofiles
+psutil
+requests
+youtube_dl
+pafy==0.5.5
+pytube==11.0.1
